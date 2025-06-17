@@ -1,4 +1,4 @@
-package com.scriptum.infrastructure.email;
+package com.scriptum.backend.infrastructure.email;
 
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;

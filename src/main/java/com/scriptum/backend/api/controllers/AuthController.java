@@ -1,4 +1,4 @@
-package com.scriptum.api.controllers;
+package com.scriptum.backend.api.controllers;
 
 import org.springframework.web.bind.annotation.*;
 

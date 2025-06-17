@@ -1,9 +1,8 @@
-package com.scriptum.infrastructure.database.jpa;
+package com.scriptum.backend.infrastructure.database.jpa;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Table;
 
 import java.time.LocalDateTime;
