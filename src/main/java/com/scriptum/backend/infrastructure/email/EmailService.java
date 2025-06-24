@@ -20,4 +20,5 @@ public class EmailService {
         message.setText("Your verification code: " + code);
         mailSender.send(message);
     }
+
 }

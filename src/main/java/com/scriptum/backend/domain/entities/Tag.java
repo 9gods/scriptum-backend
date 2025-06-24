@@ -12,24 +12,17 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Tag {
 
     private UUID id;
-
+    
     private String name;
-
-    private String email;
-
-    private String password;
-
-    private String avatarUrl;
-
+    
+    private String color;
+    
+    private UUID userId;
+    
     private LocalDateTime createdAt;
-
-    private LocalDateTime updatedAt;
-
-    private boolean emailVerified;
-
-    private boolean newUser;
-
+    
+    private LocalDateTime modifiedAt;
 }

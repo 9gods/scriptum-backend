@@ -6,30 +6,28 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.UUID;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Note {
 
     private UUID id;
-
-    private String name;
-
-    private String email;
-
-    private String password;
-
-    private String avatarUrl;
-
+    
+    private String title;
+    
+    private String content;
+    
+    private UUID userId;
+    
     private LocalDateTime createdAt;
-
-    private LocalDateTime updatedAt;
-
-    private boolean emailVerified;
-
-    private boolean newUser;
-
+    
+    private LocalDateTime modifiedAt;
+    
+    @Builder.Default
+    private Set<Tag> tags = new HashSet<>();
 }
