@@ -1,5 +1,6 @@
-package com.scriptum.backend.infrastructure.database.jpa;
+package com.scriptum.backend.infrastructure.database.repository;
 
+import com.scriptum.backend.infrastructure.database.jpa.Tag;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -15,4 +16,5 @@ public interface ITagJpaRepository extends JpaRepository<Tag, UUID> {
     Optional<Tag> findByUserIdAndName(UUID userId, String name);
     
     List<Tag> findByUserIdAndNameContainingIgnoreCaseOrderByNameAsc(UUID userId, String name);
+
 }

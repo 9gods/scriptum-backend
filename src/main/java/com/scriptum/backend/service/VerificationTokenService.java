@@ -1,6 +1,6 @@
 package com.scriptum.backend.service;
 
-import com.scriptum.backend.infrastructure.database.jpa.IVerificationTokenRepository;
+import com.scriptum.backend.infrastructure.database.repository.IVerificationTokenRepository;
 import com.scriptum.backend.infrastructure.database.jpa.UserJpaEntity;
 import com.scriptum.backend.infrastructure.database.jpa.VerificationToken;
 import com.scriptum.backend.infrastructure.email.EmailService;

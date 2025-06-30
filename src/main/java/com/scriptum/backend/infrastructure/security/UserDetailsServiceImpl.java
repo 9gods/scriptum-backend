@@ -1,6 +1,6 @@
 package com.scriptum.backend.infrastructure.security;
 
-import com.scriptum.backend.infrastructure.database.jpa.IUserJpaRepository;
+import com.scriptum.backend.infrastructure.database.repository.IUserJpaRepository;
 import com.scriptum.backend.infrastructure.database.jpa.UserJpaEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

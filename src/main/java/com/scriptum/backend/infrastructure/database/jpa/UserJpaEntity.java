@@ -12,9 +12,9 @@ import lombok.Setter;
 import java.util.UUID;
 
 @Entity
-@Table(name = "USER")
 @Getter
 @Setter
+@Table(name = "APP_USER")
 public class UserJpaEntity extends BaseEntity {
 
     @Id

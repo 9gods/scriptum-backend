@@ -1,5 +1,6 @@
-package com.scriptum.backend.infrastructure.database.jpa;
+package com.scriptum.backend.infrastructure.database.repository;
 
+import com.scriptum.backend.infrastructure.database.jpa.Notes;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -16,4 +17,5 @@ public interface INotesJpaRepository extends JpaRepository<Notes, UUID> {
     List<Notes> findByUserIdAndContentContainingIgnoreCaseOrderByModifiedAtDesc(UUID userId, String content);
     
     List<Notes> findByUserIdAndTagsIdOrderByModifiedAtDesc(UUID userId, UUID tagId);
+
 }

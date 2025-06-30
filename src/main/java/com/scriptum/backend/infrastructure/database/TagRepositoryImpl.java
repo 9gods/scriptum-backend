@@ -2,7 +2,7 @@ package com.scriptum.backend.infrastructure.database;
 
 import com.scriptum.backend.domain.entities.Tag;
 import com.scriptum.backend.domain.repositories.ITagRepository;
-import com.scriptum.backend.infrastructure.database.jpa.ITagJpaRepository;
+import com.scriptum.backend.infrastructure.database.repository.ITagJpaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

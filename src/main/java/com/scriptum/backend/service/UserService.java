@@ -1,9 +1,8 @@
 package com.scriptum.backend.service;
 
-import com.scriptum.backend.domain.entities.User;
 import com.scriptum.backend.domain.request.UserRequestBody;
 import com.scriptum.backend.domain.response.UserResponseBody;
-import com.scriptum.backend.infrastructure.database.jpa.IUserJpaRepository;
+import com.scriptum.backend.infrastructure.database.repository.IUserJpaRepository;
 import com.scriptum.backend.infrastructure.database.jpa.UserJpaEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;

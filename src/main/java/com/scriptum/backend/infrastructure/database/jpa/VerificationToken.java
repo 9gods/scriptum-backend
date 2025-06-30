@@ -38,4 +38,5 @@ public class VerificationToken extends BaseEntity {
     public boolean isExpired() {
         return LocalDateTime.now().isAfter(expiryDate);
     }
+
 }

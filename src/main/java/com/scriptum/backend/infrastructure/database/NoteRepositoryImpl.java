@@ -3,7 +3,7 @@ package com.scriptum.backend.infrastructure.database;
 import com.scriptum.backend.domain.entities.Note;
 import com.scriptum.backend.domain.entities.Tag;
 import com.scriptum.backend.domain.repositories.INoteRepository;
-import com.scriptum.backend.infrastructure.database.jpa.INotesJpaRepository;
+import com.scriptum.backend.infrastructure.database.repository.INotesJpaRepository;
 import com.scriptum.backend.infrastructure.database.jpa.Notes;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
