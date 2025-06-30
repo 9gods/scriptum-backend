@@ -41,6 +41,9 @@ public class Notes extends BaseEntity {
     @Column(name = "CONTENT", columnDefinition = "TEXT")
     private String content;
 
+    @Column(name = "PINNED")
+    private boolean pinned;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "USER_ID")
     private UserJpaEntity user;

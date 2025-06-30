@@ -74,6 +74,7 @@ public class NoteRepositoryImpl implements INoteRepository {
                 .id(notes.getId())
                 .title(notes.getTitle())
                 .content(notes.getContent())
+                .pinned(notes.isPinned())
                 .userId(notes.getUser() != null ? notes.getUser().getId() : null)
                 .createdAt(notes.getCreatedAt())
                 .modifiedAt(notes.getModifiedAt())
@@ -84,15 +85,12 @@ public class NoteRepositoryImpl implements INoteRepository {
     }
 
     private Notes mapToNotesJpa(Note note) {
-        Notes notes = Notes.builder()
+        return Notes.builder()
                 .id(note.getId())
                 .title(note.getTitle())
+                .pinned(note.isPinned())
                 .content(note.getContent())
                 .build();
-        
-        // User and tags would need to be set separately
-        
-        return notes;
     }
     
     private Tag mapToTag(com.scriptum.backend.infrastructure.database.jpa.Tag tagJpa) {

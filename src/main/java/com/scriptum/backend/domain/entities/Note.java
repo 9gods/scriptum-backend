@@ -1,5 +1,6 @@
 package com.scriptum.backend.domain.entities;
 
+import com.scriptum.backend.infrastructure.database.jpa.UserJpaEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,7 +22,9 @@ public class Note {
     private String title;
     
     private String content;
-    
+
+    private boolean pinned;
+
     private UUID userId;
     
     private LocalDateTime createdAt;
@@ -30,4 +33,5 @@ public class Note {
     
     @Builder.Default
     private Set<Tag> tags = new HashSet<>();
+
 }
