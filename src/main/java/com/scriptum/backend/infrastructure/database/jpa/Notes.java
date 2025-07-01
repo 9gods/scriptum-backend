@@ -45,7 +45,7 @@ public class Notes extends BaseEntity {
     private boolean pinned;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "USER_ID")
+    @JoinColumn(name = "USER_ID", nullable = false, updatable = false)
     private UserJpaEntity user;
 
     @ManyToMany(fetch = FetchType.LAZY)
